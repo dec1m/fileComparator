@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #253746;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="md.maib.comparator.controllers.FileLoadController">
+   <children>
+      <AnchorPane layoutY="83.0" prefHeight="317.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button defaultButton="true" layoutX="278.0" layoutY="183.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #40c1ac; -fx-text-fill: #253746; -fx-font-size: 20;" text="Compare" textFill="#253746">
+               <font>
+                  <Font name="Ubuntu Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="31.0" fitWidth="152.0" layoutX="14.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="fileOpenButtonA" defaultButton="true" layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#onOpenFileA" prefHeight="89.0" prefWidth="328.0" style="-fx-background-color: #515f6b; -fx-text-fill: #fafafa; -fx-font-size: 20;" text="Open file A" textFill="#253746">
+               <font>
+                  <Font name="Ubuntu Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="fileOpenButtonB" defaultButton="true" layoutX="358.0" layoutY="61.0" mnemonicParsing="false" onAction="#onOpenFileB" prefHeight="89.0" prefWidth="328.0" style="-fx-background-color: #515f6b; -fx-text-fill: #fafafa; -fx-font-size: 20;" text="Open file B" textFill="#253746">
+               <font>
+                  <Font name="Ubuntu Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="262.0" layoutY="14.0" prefHeight="50.0" prefWidth="177.0" text="Comparator" textFill="#fafafa">
+         <font>
+            <Font name="Ubuntu" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
