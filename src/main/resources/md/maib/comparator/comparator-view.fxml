@@ -12,7 +12,7 @@
    <children>
       <AnchorPane layoutY="83.0" prefHeight="317.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
          <children>
-            <Button defaultButton="true" layoutX="278.0" layoutY="183.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #40c1ac; -fx-text-fill: #253746; -fx-font-size: 20;" text="Compare" textFill="#253746">
+            <Button fx:id="compareButton" defaultButton="true" layoutX="278.0" layoutY="183.0" mnemonicParsing="false" onAction="#onProcess" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #40c1ac; -fx-text-fill: #253746; -fx-font-size: 20;" text="Compare" textFill="#253746">
                <font>
                   <Font size="20" />
                </font>
@@ -25,7 +25,7 @@
                   <Image url="@../../../logo.png" />
                </image>
             </ImageView>
-            <Button fx:id="fileOpenButtonA" defaultButton="true" layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#onOpenFileA" prefHeight="89.0" prefWidth="328.0" style="-fx-background-color: #515f6b; -fx-text-fill: #fafafa; -fx-font-size: 20;" text="Open file A" textFill="#253746">
+            <Button fx:id="fileOpenButtonA" layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#onOpenFileA" prefHeight="89.0" prefWidth="328.0" style="-fx-background-color: #515f6b; -fx-text-fill: #fafafa; -fx-font-size: 20;" text="Open XLSX file" textFill="#253746">
                <font>
                   <Font size="20" />
                </font>
@@ -33,7 +33,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="fileOpenButtonB" defaultButton="true" layoutX="358.0" layoutY="61.0" mnemonicParsing="false" onAction="#onOpenFileB" prefHeight="89.0" prefWidth="328.0" style="-fx-background-color: #515f6b; -fx-text-fill: #fafafa; -fx-font-size: 20;" text="Open file B" textFill="#253746">
+            <Button fx:id="fileOpenButtonB" layoutX="358.0" layoutY="61.0" mnemonicParsing="false" onAction="#onOpenFileB" prefHeight="89.0" prefWidth="328.0" style="-fx-background-color: #515f6b; -fx-text-fill: #fafafa; -fx-font-size: 20;" text="Open CSV file" textFill="#253746">
                <font>
                   <Font size="20" />
                </font>
